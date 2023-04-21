@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weight"
+    android:background="@color/grey3"
+    tools:layout_editor_absoluteX="-25dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/purple3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="Weight"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="@color/grey5"
+            android:textColor="@color/black"
+            android:text="Convert"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="180dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/grey5"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/btn_from"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/from"
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/btn_to"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/btn_from" />
+
+            <Spinner
+                android:id="@+id/to"
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
